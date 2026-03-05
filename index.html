@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Grandmaster Chess</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Grandmaster Chess</h1>
+
+<div class="controls">
+
+<button id="newGame">New Game</button>
+
+<select id="difficulty">
+<option value="5">Easy</option>
+<option value="10">Medium</option>
+<option value="15">Hard</option>
+<option value="20">Grandmaster</option>
+</select>
+
+<select id="time">
+<option value="60">1 Minute</option>
+<option value="180">3 Minutes</option>
+<option value="300">5 Minutes</option>
+<option value="600">10 Minutes</option>
+<option value="0">Unlimited</option>
+</select>
+
+<button id="flipBoard">Flip Board</button>
+
+</div>
+
+</header>
+
+<div class="layout">
+
+<div class="left">
+
+<div id="board"></div>
+
+<div class="timers">
+
+<div id="timerWhite">05:00</div>
+<div id="timerBlack">05:00</div>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<h3>Moves</h3>
+<div id="moves"></div>
+
+<h3>Evaluation</h3>
+<div id="evalBar"><div id="evalFill"></div></div>
+
+<h3>Captured</h3>
+<div id="captured"></div>
+
+<h3>Status</h3>
+<div id="status"></div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+<script src="engine.js"></script>
+
+<script src="board.js"></script>
+
+<script src="ui.js"></script>
+
+<script src="timer.js"></script>
+
+<script src="sounds.js"></script>
+
+</body>
+</html>
